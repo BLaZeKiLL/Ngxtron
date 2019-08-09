@@ -1,5 +1,5 @@
 {
-  "name": "electron",
+  "name": "ngxtron",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -29,7 +29,11 @@
     "help": "nx help"
   },
   "private": true,
-  "dependencies": {
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^0.800.1",
+    "@angular/cli": "8.1.1",
+    "@angular/compiler-cli": "^8.0.0",
+    "@angular/language-service": "^8.0.0",
     "@angular/animations": "^8.0.0",
     "@angular/common": "^8.0.0",
     "@angular/compiler": "^8.0.0",
@@ -38,21 +42,16 @@
     "@angular/platform-browser": "^8.0.0",
     "@angular/platform-browser-dynamic": "^8.0.0",
     "@angular/router": "^8.0.0",
-    "@nrwl/angular": "^8.4.6",
-    "core-js": "^2.5.4",
-    "rxjs": "~6.4.0",
-    "zone.js": "^0.9.1"
-  },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "^0.800.1",
-    "@angular/cli": "8.1.1",
-    "@angular/compiler-cli": "^8.0.0",
-    "@angular/language-service": "^8.0.0",
     "@nrwl/cypress": "8.4.6",
     "@nrwl/jest": "8.4.6",
     "@nrwl/workspace": "8.4.6",
+    "@nrwl/angular": "^8.4.6",
+    "@nrwl/node": "8.4.6",
     "@types/jest": "24.0.9",
     "@types/node": "~8.9.4",
+    "core-js": "^2.5.4",
+    "rxjs": "~6.4.0",
+    "zone.js": "^0.9.1",
     "codelyzer": "~5.0.1",
     "cypress": "^3.4.1",
     "dotenv": "6.2.0",
@@ -62,7 +61,6 @@
     "ts-jest": "24.0.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
-    "typescript": "~3.4.5",
-    "@nrwl/node": "8.4.6"
+    "typescript": "~3.4.5"
   }
 }
