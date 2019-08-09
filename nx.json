@@ -7,5 +7,15 @@
     "tslint.json": "*",
     "nx.json": "*"
   },
-  "projects": {}
+  "projects": {
+    "browser-e2e": {
+      "tags": []
+    },
+    "browser": {
+      "tags": []
+    },
+    "electron": {
+      "tags": []
+    }
+  }
 }
