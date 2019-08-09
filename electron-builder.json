@@ -1,45 +1,37 @@
 {
-  "productName": "angular-electron",
+  "productName": "ngxtron",
   "directories": {
     "output": "release/"
   },
-    "files": [
-        "**/*",
-        "!**/*.ts",
-        "!*.code-workspace",
-        "!LICENSE.md",
-        "!README.md",
-        "!package.json",
-        "!package-lock.json",
-        "!apps/",
-        "!libs/",
-        "!tools",
-        "!hooks/",
-        "!angular.json",
-        "!tsconfig.json",
-        "!tslint.json",
-        "!nx.json",
-        "!jest.config.js",
-        "!.editorconfig",
-        "!.prettierignore",
-        "!prettierrc"
-    ],
+  "files": [
+    "**/*",
+    "!**/*.ts",
+    "!*.code-workspace",
+    "!LICENSE.md",
+    "!.vscode",
+    "!README.md",
+    "!package.json",
+    "!package-lock.json",
+    "!apps/",
+    "!libs/",
+    "!tools",
+    "!hooks/",
+    "!angular.json",
+    "!tsconfig.json",
+    "!tslint.json",
+    "!nx.json",
+    "!jest.config.js",
+    "!.editorconfig",
+    "!.prettierignore",
+    "!.prettierrc"
+  ],
   "win": {
-    "icon": "dist",
-    "target": [
-      "portable"
-    ]
+    "target": ["portable"]
   },
   "mac": {
-    "icon": "dist",
-    "target": [
-      "dmg"
-    ]
+    "target": ["dmg"]
   },
   "linux": {
-    "icon": "dist",
-    "target": [
-      "AppImage"
-    ]
+    "target": ["AppImage"]
   }
 }
