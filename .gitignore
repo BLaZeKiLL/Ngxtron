@@ -4,6 +4,7 @@
 /dist
 /release
 /tmp
+/documentation
 /out-tsc
 
 # dependencies
