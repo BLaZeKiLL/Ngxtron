@@ -7,7 +7,13 @@
     "name": "Devashish Lal"
   },
   "description": "Starter project for Angular + Electron + Nx",
-  "keywords": ["Angular", "Electron", "Nx", "Starter", "Project"],
+  "keywords": [
+    "Angular",
+    "Electron",
+    "Nx",
+    "Starter",
+    "Project"
+  ],
   "main": "dist/apps/electron/main.js",
   "scripts": {
     "postinstall": "npm run postinstall:electron && electron-builder install-app-deps",
