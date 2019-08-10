@@ -1,4 +1,61 @@
-# Electron
+# Ngxtron
+
+Starter project for an Angular + Electron + Nx app inspired by [maximegris](https://github.com/maximegris/angular-electron)
+
+This project is setup to make full use of nx and monorepos from the get go
+
+from mordern test tools like jest and cypress to documentation generation using compodoc
+
+Not just limited to angular and electron, with the help of NX you can easliy add React projects, Nest/Express backends, or vanilla node projects
+
+Also with the power to create shared libraries to allow maximum code reusability and these are just some of the features of nx..
+
+## Project Structure
+
+- `apps` contains all the applications within the monorepo
+  - `browser` Angular project (Frontend UI)
+  - `browser-e2e` Cypress e2e test project
+  - `electron` A Node.ts project for electron
+- `dist` contains built outputs of projects
+- `documentation` contains generated documentation of the projects
+- `libs` contains shared libraries for the monorepo
+- `release` contains packaged electron apps for windows / linux / mac
+- `tools` contains ng schematics and build scripts
+
+## Start scripts
+
+- `npm start` serves the angular app (electron build) on localhost:4200, waits for the angular build to finish and opens electron
+- `npm run ng:serve` serve the angular app (electron build) on localhost:4200
+- `npm run ng:serve:web` serve the angular app (browser build) on localhost:4200
+- `npm run electron:serve` waits on 4200 then builds and starts electron
+- `npm run electron:local` serve the electon app with a production build of angular app (electron build)
+
+## Build Scripts
+
+- `postinstall` overwrites angular webpack script for node integration dependeing on browser build or electron build
+- `npm build` builds electron and angular app for electron mode
+- `npm run build:dev` builds the project (electron + angular) with dev config
+- `npm run build:prod` builds the project (electron + angular) with production config
+- `npm run build:electron` builds electron only
+
+## Test Scripts
+
+- `npm run test:web` runs jest test runner for angular project
+- `npm run test:electron` runs jest test runner for electron project
+- `npm run e2e` runs cypress e2e tests
+
+## Documentation Scripts
+
+- `npm run doc:web` generates documentation for angular project using compodoc
+- `npm run doc:electron` generates documentation for electron project using compodoc
+
+## Packaging Scripts
+
+- `npm run electron:linux` packages electron app for linux
+- `npm run electron:windows` packages electron app for windows
+- `npm run electron:mac` packages electron app for mac
+
+# Nx
 
 This project was generated using [Nx](https://nx.dev).
 
