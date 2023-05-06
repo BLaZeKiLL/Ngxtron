@@ -58,7 +58,7 @@
   },
   "private": true,
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.800.1",
+    "@angular-devkit/build-angular": "^16.0.0",
     "@angular/animations": "^8.0.0",
     "@angular/cli": "8.1.1",
     "@angular/common": "^8.0.0",
@@ -74,7 +74,7 @@
     "@nrwl/angular": "^8.4.6",
     "@nrwl/cypress": "8.4.6",
     "@nrwl/jest": "8.4.6",
-    "@nrwl/node": "8.4.6",
+    "@nrwl/node": "8.12.11",
     "@nrwl/workspace": "8.4.6",
     "@types/jest": "24.0.9",
     "@types/node": "~8.9.4",
